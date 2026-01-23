@@ -1,97 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta property="og:title" content="crim" />
     <meta property="og:description" content="My background and focus: reverse engineering, game security, and malware analysis.">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://crim.blog/" />
     <meta property="og:site_name" content="NtProtectVirtualMemory" />
-	
     <title>NtProtectVirtualMemory | Reverse Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare. com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <nav class="nav">
-            <div class="nav-brand">
-                <span class="prompt">~/$</span> <a href="/">ntprotectvirtualmemory</a>
+      <nav class="nav">
+        <div class="nav-brand">
+          <span class="prompt">~/$</span>
+          <a href="/">ntprotectvirtualmemory</a>
+        </div>
+        <div class="nav-links">
+          <a href="/" class="active">[about]</a>
+          <a href="projects">[projects]</a>
+          <a href="blog">[blog]</a>
+        </div>
+      </nav>
+      <header>
+        <div class="header-content">
+          <img src="https://github.com/NtProtectVirtualMemory.png" alt="Avatar" class="avatar">
+          <div class="header-text">
+            <h1>NtProtectVirtualMemory <span class="cursor"></span>
+            </h1>
+            <p class="title">// reverse engineer & low-level developer</p>
+            <div class="social-links">
+              <a href="https://github.com/NtProtectVirtualMemory" target="_blank">
+                <i class="fa-brands fa-github"></i> github </a>
+              <a href="https://discord.com/users/1044615012104282153" target="_blank">
+                <i class="fa-brands fa-discord"></i> discord </a>
             </div>
-            <div class="nav-links">
-                <a href="/" class="active">[about]</a>
-                <a href="projects">[projects]</a>
-                <a href="blog">[blog]</a>
-            </div>
-        </nav>
-
-        <header>
-            <div class="header-content">
-                <img src="https://github.com/NtProtectVirtualMemory.png" alt="Avatar" class="avatar">
-                <div class="header-text">
-                    <h1>NtProtectVirtualMemory<span class="cursor"></span></h1>
-                    <p class="title">// reverse engineer & low-level developer</p>
-                    <div class="social-links">
-                        <a href="https://github.com/NtProtectVirtualMemory" target="_blank">
-                            <i class="fa-brands fa-github"></i> github
-                        </a>
-                        <a href="https://discord.com/users/1044615012104282153" target="_blank">
-                            <i class="fa-brands fa-discord"></i> discord
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <section class="about">
-            <h2>about</h2>
-            <p>
-                Reverse engineer based in <span class="highlight">Romania</span>, specializing in 
-                <span class="highlight">binary analysis</span>, <span class="highlight">low-level systems programming</span>, 
-                and <span class="highlight">binary exploitation</span>. Proficient in C as my primary language, 
-                with strong capabilities in x86/x64 assembly. 
-            </p>
-            <br>
-            <p>
-                Focused on finding vulnerabilities and developing advanced tools for 
-                <span class="highlight">Game Security</span> and <span class="highlight">Malware Analysis</span>. 
-            </p>
-        </section>
-
-        <section class="skills">
-            <h2>skills</h2>
-            <div class="skills-block">
-                <div class="line comment">// technical stack</div>
-                <div class="line"><span class="bracket">{</span></div>
-                <div class="line">  <span class="key">"tools"</span>: <span class="value">["IDA Pro", "x64dbg", "WinDbg"]</span>,</div>
-		<div class="line">  <span class="key">"languages"</span>: <span class="value">["C/C++", "Python", "x86/x64 Assembly"]</span>,</div>
-                <div class="line">  <span class="key">"domains"</span>: <span class="value">["Reverse Engineering", "Windows Internals", "Malware Analysis"]</span></div>
-                <div class="line"><span class="bracket">}</span></div>
-            </div>
-        </section>
-
-        <section class="recent">
-            <h2>recent activity</h2>
-            <div class="activity-list">
-                <div class="activity-item">
-                    <span class="activity-type project">[project]</span>
-                    <a href="projects#pe-library">PE-Library</a>
-                    <span class="activity-desc">— C++20 PE parser</span>
-                </div>
-
-		 <div class="activity-item">
-                    <span class="activity-type writeup">[writeup]</span>
-                    <a href="posts/ida-vuln">IDA Vulnerability</a>
-                    <span class="activity-desc">— Crashing the Decompiler</span>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </header>
+      <section class="about">
+        <h2>about</h2>
+        <p> Reverse engineer based in <span class="highlight">Romania</span>, specializing in <span class="highlight">binary analysis</span>, <span class="highlight">low-level systems programming</span>, and <span class="highlight">binary exploitation</span>. Proficient in C as my primary language, with strong capabilities in x86/x64 assembly. </p>
+        <br>
+        <p> Focused on finding vulnerabilities and developing advanced tools for <span class="highlight">Game Security</span> and <span class="highlight">Malware Analysis</span>. </p>
+      </section>
+      <section class="skills">
+        <h2>skills</h2>
+        <div class="skills-block">
+          <div class="line comment">// technical stack</div>
+          <div class="line">
+            <span class="bracket">{</span>
+          </div>
+          <div class="line">
+            <span class="key">"tools"</span>: <span class="value">["IDA Pro", "x64dbg", "WinDbg"]</span>,
+          </div>
+          <div class="line">
+            <span class="key">"languages"</span>: <span class="value">["C/C++", "Python", "x86/x64 Assembly"]</span>,
+          </div>
+          <div class="line">
+            <span class="key">"domains"</span>: <span class="value">["Reverse Engineering", "Windows Internals", "Malware Analysis"]</span>
+          </div>
+          <div class="line">
+            <span class="bracket">}</span>
+          </div>
+        </div>
+      </section>
+      <section class="recent">
+        <h2>recent activity</h2>
+        <div class="activity-list">
+          <div class="activity-item">
+            <span class="activity-type project">[project]</span>
+            <a href="projects#pe-library">PE-Library</a>
+            <span class="activity-desc">— C++20 PE parser</span>
+          </div>
+          <div class="activity-item">
+            <span class="activity-type writeup">[writeup]</span>
+            <a href="posts/ida-vuln">IDA Vulnerability</a>
+            <span class="activity-desc">— Crashing the Decompiler</span>
+          </div>
+        </div>
+      </section>
     </div>
-
     <footer>
-        <p>© 2026 NtProtectVirtualMemory — <a href="https://github.com/NtProtectVirtualMemory/NtProtectVirtualMemory.github.io">src</a></p>
+      <p>© 2026 NtProtectVirtualMemory — <a href="https://github.com/NtProtectVirtualMemory/NtProtectVirtualMemory.github.io">src</a>
+      </p>
     </footer>
-</body>
+  </body>
 </html>
