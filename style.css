@@ -386,22 +386,11 @@ section h2::before {
     border-color: var(--border-light);
 }
 
-.post-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.05rem;
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-}
-
-.post-date,
-.read-duration {
-    display: flex;
-    align-items: center;
+.post-date {
+    color: var(--comment);
+    font-size: 0.8rem;
     white-space: nowrap;
-    gap: 0.3rem;
 }
-
 
 .post-info {
     flex: 1;
@@ -472,6 +461,22 @@ section h2::before {
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: var(--text-primary);
+}
+
+.post-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.05rem;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.post-date,
+.read-duration {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 0.3rem;
 }
 
 .post-content {
@@ -572,11 +577,11 @@ section h2::before {
 
 /* Footer */
 footer {
-    padding: 2rem;
-    color: var(--comment);
-    font-size: 0.8rem;
-    border-top: 1px solid var(--border);
-    text-align: center;
+    padding: 2rem;
+    color: var(--comment);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
 }
 
 footer a {
