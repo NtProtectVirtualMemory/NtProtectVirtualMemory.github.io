@@ -467,8 +467,8 @@ section h2::before {
     display: flex;
     flex-direction: column;
     gap: 0.05rem;
-    font-size: 0.75rem;
-    color: var(--text-secondary);
+    font-size: 0.8rem;
+    color: var(--comment);
 }
 
 .post-date,
