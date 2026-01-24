@@ -32,7 +32,15 @@
 
 body {
     font-family: 'JetBrains Mono', monospace;
-    background: var(--bg);
+    
+    background-color: #0a0a0a;                   
+    background-image: url('bg-overlay.png'); 
+    
+    background-size:     cover;        
+    background-position: center;     
+    background-repeat:   no-repeat;
+    background-attachment: fixed;        
+    
     color: var(--text-primary);
     line-height: 1.7;
     min-height: 100vh;
@@ -468,11 +476,11 @@ section h2::before {
 .post-date,
 .read-duration {
     display: flex;
+    color: var(--comment);
+    font-size: 0.8rem;
     align-items: center;
     white-space: nowrap;
     gap: 0.3rem;
-    color: var(--comment);
-    font-size: 0.8rem;
 }
 
 .post-content {
