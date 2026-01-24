@@ -386,12 +386,6 @@ section h2::before {
     border-color: var(--border-light);
 }
 
-.post-date {
-    color: var(--comment);
-    font-size: 0.8rem;
-    white-space: nowrap;
-}
-
 .post-info {
     flex: 1;
 }
@@ -467,8 +461,8 @@ section h2::before {
     display: flex;
     flex-direction: column;
     gap: 0.05rem;
-    font-size: 0.8rem;
-    color: var(--comment);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
 }
 
 .post-date,
@@ -477,6 +471,8 @@ section h2::before {
     align-items: center;
     white-space: nowrap;
     gap: 0.3rem;
+    color: var(--comment);
+    font-size: 0.8rem;
 }
 
 .post-content {
