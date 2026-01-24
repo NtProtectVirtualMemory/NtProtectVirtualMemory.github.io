@@ -37,7 +37,7 @@
 
             <div class="post-content">
                 <p>
-                    While analyzing a  random malware sample, I noticed IDA Pro's Hex-Rays decompiler producing weird output. Curious, I dug in and realized it doesn't always perform bound checks on certain intrinsics. After testing a few edge cases, I landed on this simple way to brick the decompiler using the <code>_bextr_u64</code> intrinsic with invalid parameters. In this post, we'll break down the vulnerability and how to reproduce it.
+                    While analyzing a random malware sample, I noticed IDA Pro's Hex-Rays decompiler producing weird output. I dug in and realized it doesn't always perform bound checks on certain intrinsics. After testing a few edge cases, I landed on this simple way to brick the decompiler using the <code>_bextr_u64</code> intrinsic with invalid parameters. In this post, we'll break down the vulnerability and how to reproduce it.
                 </p>
 
                 <h2>Understanding the Vulnerability</h2>
@@ -47,7 +47,7 @@
 
                 <h2>How the Exploit Works</h2>
                 <p>
-                    The core trick is crafting an invalid <code>_bextr_u64</code> call where the length parameter exceeds bounds. I've wrapped it in a macro called <code>IDA_BRICK</code> to make it easy to insert anywhere:
+                    The core of it is making an invalid <code>_bextr_u64</code> call where the length parameter exceeds bounds. I've wrapped it in a macro called <code>IDA_BRICK</code> to make it easy to insert anywhere:
                 </p>
 
 <pre><code class="language-c">#define IDA_BRICK() \
@@ -113,4 +113,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
 </body>
+
 </html>
