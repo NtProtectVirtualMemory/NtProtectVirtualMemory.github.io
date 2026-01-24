@@ -299,7 +299,7 @@ section h2::before {
     background: var(--bg-secondary);
     border: 1px solid var(--border);
     border-radius: 4px;
-    padding: 1.5rem;
+    padding: 1rem;
     transition: border-color 0.2s;
 }
 
@@ -311,6 +311,7 @@ section h2::before {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    padding-left: 1rem;
 }
 
 .project-card h3 a {
@@ -322,20 +323,15 @@ section h2::before {
     color: var(--primary);
 }
 
-.project-card h3::before {
-    content: '├── ';
-    color: var(--comment);
-}
-
 .project-card p {
     color: var(--text-secondary);
     font-size: 0.85rem;
     margin-bottom: 1rem;
-    padding-left: 2.5rem;
+    padding-left: 1rem;
 }
 
 .project-tags {
-    padding-left: 2.5rem;
+    padding-left: 1rem;
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
@@ -352,7 +348,7 @@ section h2::before {
 }
 
 .project-links {
-    padding-left: 2.5rem;
+    padding-left: 1rem;
     margin-top: 1rem;
     display: flex;
     gap: 1rem;
