@@ -104,7 +104,7 @@ payload    = filler + known_bytes
                 <p>
                     Because ECB encrypts each 16-byte block independently:
                 </p>
-                <pre><code>Input:  AAAAAAAAAAAAAAAAAAAAAAAAAX  secretbyte...
+                <pre><code>Input:  AAAAAAAAAAAAAAAAX  secretbyte...
 Block:  [ controlled + 1 unknown ]   [ rest ]</code></pre>
                 <p>
                     When you guess the correct <code>X</code>, the entire block ciphertext matches,revealing one byte at a cost of ~256 queries.
@@ -134,3 +134,4 @@ Block:  [ controlled + 1 unknown ]   [ rest ]</code></pre>
 </body>
 
 </html>
+
