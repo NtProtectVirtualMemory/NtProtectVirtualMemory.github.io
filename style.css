@@ -439,8 +439,16 @@ section h2::before {
     color: var(--orange);
 }
 
+.post-tags span.tag-cryptography {
+    color: var(--yellow);
+}
+
 .post-tags span.tag-windows {
     color: var(--blue);
+}
+
+.post-tags span.tag-python {
+    color: rgb(3, 141, 184);
 }
 
 /* post article page */
@@ -647,7 +655,7 @@ code[class*="language-"] {
 .token.comment,
 .token.prolog,
 .token.doctype,
-. token.cdata {
+.token.cdata {
     color: var(--comment);
 }
 
