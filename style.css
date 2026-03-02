@@ -195,26 +195,28 @@ section h2::before {
     color: var(--text-primary);
 }
 
-/* Skills block */
 .skills-block {
     background: var(--bg-secondary);
     border: 1px solid var(--border);
     border-radius: 4px;
     padding: 1.5rem;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
     overflow-x: auto;
+    line-height: 1.5;
 }
 
 .skills-block .line {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
+    white-space: pre;          
 }
 
 .skills-block .key {
     color: var(--pink);
 }
 
-.skills-block .value {
-    color: var(--yellow);
+.skills-block .string {
+    color: var(--green) !important;
 }
 
 .skills-block .bracket {
